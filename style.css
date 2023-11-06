@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: rgb(6, 28, 67);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+#header-esquerda {
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#header-nome {
+  padding-left: 5px;
+}
+
+#header-nome h1 {
+  font-size: 18px;
+}
+
+#header-nome p {
+  font-size: 12px;
+}
+
+#header-direita {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#header-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+#header-logo {
+  height: 90px;
+  width: 90px;
+}
+
+#header-hamburger {
+  display: none;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  padding-right: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#header-login {
+  background-color: rgb(107, 12, 155);
+  border-radius: 15px;
+  text-align: center;
+  padding: 12px;
+}
+
+#header-direita a {
+  color: white;
+}
+
+.img-index {
+  height: 150px;
+  width: 150px;
+}
+
+.main-index {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-index p {
+  max-width: 400px;
+  text-align: justify;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#cima {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-grow: 4;
+}
+
+#cima-esquerda {
+  text-align: center;
+  max-width: 650px;
+}
+
+#cima-subtitulo {
+  padding-top: 10px;
+}
+
+#cima-logo {
+  width: 300px;
+  height: 199.63px;
+}
+
+#cima-paragrafo {
+  padding: 15px;
+  max-width: 450px;
+}
+
+
+#baixo {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.baixo-paragrafo {
+  padding: 20px 80px;
+}
+
+#baixo-esquerda, #baixo-direita, #baixo-centro {
+  color: white;
+  padding: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+
+#baixo-esquerda {
+  background-color: rgb(6, 28, 67);
+}
+
+#baixo-direita {
+  background-color: rgb(6, 28, 67);
+}
+
+#baixo-centro {
+  background-color: rgb(62, 202, 176);
+}
+
+
+footer {
+  background-color: rgb(6, 28, 67);
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+  color: white;
+}
+
+#footer-logo {
+  height: 60px;
+  width: 60px;
+}
+
+#footer-direita a {
+  margin-right: 4px;
+}
+
+@media only screen and (max-width: 480px)  {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: baseline;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  #header-logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  #header-nome, #header-nav ul, #header-login{
+    display: none;
+  }
+
+  #header-hamburger {
+    display: block;
+    padding-top: 20px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #cima {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #cima-logo {
+    height: 166.29px;
+    width: 250px;
+  }
+
+  #baixo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer-logo {
+    display: none;
+  }
+
+  #footer-centro {
+    text-align: center;
+    font-size: 10px;
+  }
+} 
+
+@media only screen and (max-width: 1023px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  header {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: baseline;
+    align-items: center;
+  }
+
+  #header-logo {
+    width: 95px;
+    height: 95px;
+  }
+
+  #header-nome, #header-nav ul{
+    display: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #cima {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #cima-logo {
+    height: 166.29px;
+    width: 250px;
+  }
+
+  #baixo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer-logo {
+    display: none;
+  }
+}
